@@ -92,15 +92,18 @@ public class WarehouseManager {
 
 		System.out.print("要素数を入れてください＞");
 
-
 		//ここに入力処理を記述する
-
+		String dateStr = br.readLine();
+		int date = Integer.parseInt(dateStr);
 
 		//ここに配列宣言を記述する
-
+		String[] line = new String[date];
 
 		//ここに値の入力+代入処理を記述する（for文）
-
+		for (int i = 0; i < line.length; i++) {
+			System.out.println("\n代入する値を入れてください＞");
+			line[i] = br.readLine();
+		}
 
 		System.out.println("\nYさん：");
 		System.out.println("...出来ました。\n");
@@ -110,9 +113,10 @@ public class WarehouseManager {
 
 		System.out.println("Yさん：");
 
-
 		//ここに配列の値の出力処理を記述する（for文）
-
+		for (int i = 0; i < line.length; i++) {
+			System.out.println(line[i]);
+		}
 
 		System.out.println("です。\n");
 
