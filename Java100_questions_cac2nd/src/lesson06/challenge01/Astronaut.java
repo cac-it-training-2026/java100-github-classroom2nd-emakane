@@ -28,7 +28,7 @@ public class Astronaut {
 
 		Spaceship spaceship = new Spaceship();
 
-		spaceship.air = -10;
+		//spaceship.air = -10;
 
 	}
 
